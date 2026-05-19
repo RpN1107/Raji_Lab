@@ -1,35 +1,23 @@
 ---
+layout: default
 ---
 
-# Lab Website Template
+# Raji Computational Biology Lab
 
-[Lab Website Template](https://github.com/greenelab/lab-website-template) is an easy-to-use, flexible website template for [labs](https://www.greenelab.com/).
-Spend less time worrying about managing a website and citations, and more time running your lab.
-
-{%
-  include button.html
-  type="docs"
-  link="https://greene-lab.gitbook.io/lab-website-template-docs"
-%}
-{%
-  include button.html
-  type="github"
-  text="On GitHub"
-  link="greenelab/lab-website-template"
-%}
+We are a computational biophysics lab working on intrinsically disordered proteins using Molecular Dynamics
 
 {% include section.html %}
 
-## Highlights
+## Research
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+We work on x, y, z among others
 
 {%
   include button.html
   link="research"
-  text="See our publications"
+  text="Explore Research"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
@@ -39,45 +27,24 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/research.jpg"
   link="research"
-  title="Our Research"
+  title="Research Areas"
   text=text
 %}
 
-{% capture text %}
+---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-{%
-  include button.html
-  link="projects"
-  text="Browse our projects"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/photo.jpg"
-  link="projects"
-  title="Our Projects"
-  flip=true
-  style="bare"
-  text=text
-%}
+## Meet the Team
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Our lab brings together students and researchers from interdisciplinary backgrounds spanning biology, computer science, data science, and bioinformatics. We believe in collaborative and open science-driven research environments.
 
 {%
   include button.html
   link="team"
-  text="Meet our team"
+  text="Meet the Team"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
@@ -87,8 +54,24 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/team.jpg"
   link="team"
   title="Our Team"
+  flip=true
   text=text
+%}
+
+---
+
+## Publications
+
+Our publications span computational biology, bioinformatics, molecular modeling, machine learning, and systems biology. We focus on reproducible and open computational research with applications in protein science, multi-omics, and biological AI.
+
+{%
+  include button.html
+  link="publications"
+  text="View Publications"
+  icon="fa-solid fa-arrow-right"
+  flip=true
+  style="bare"
 %}
