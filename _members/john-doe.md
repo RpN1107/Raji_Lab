@@ -1,10 +1,10 @@
 ---
-name: John Doe
+name: Rithwik Nambiar
 image: images/photo.jpg
 role: phd
-group: alum
 links:
-  github: john-doe
+  github: RpN1998
+  website: https://rpn1107.github.io/rithwiknambiar.github.io/
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Rithwik writeup
