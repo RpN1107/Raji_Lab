@@ -2,6 +2,7 @@
 name: Rithwik Nambiar
 image: images/photo.jpg
 role: phd
+description: PhD student
 
 start_order: 202601
 duration: Jan 2026 - <i>present</i>
