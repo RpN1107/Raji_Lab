@@ -21,14 +21,18 @@ Our lab brings together researchers from computational biology, biophysics, mole
 
 {% for member in pi_members %}
 
-<div style="text-align: center; max-width: 300px;">
+<div style="text-align: center; max-width: 320px;">
 
-  <img
-    src="{{ member.image | relative_url }}"
-    width="240"
-    height="240"
-    style="border-radius: 16px; object-fit: cover;"
-  >
+  <a href="{{ member.url | relative_url }}">
+
+    <img
+      src="{{ member.image | relative_url }}"
+      width="240"
+      height="240"
+      style="border-radius: 16px; object-fit: cover;"
+    >
+
+  </a>
 
   <h3 style="margin-top: 1rem; margin-bottom: 0.3rem;">
     {{ member.name }}
@@ -40,12 +44,6 @@ Our lab brings together researchers from computational biology, biophysics, mole
 
   <p style="margin-top: 0.7rem;">
     {{ member.description }}
-  </p>
-
-  <p>
-    <a href="{{ member.url | relative_url }}">
-      View Profile
-    </a>
   </p>
 
 </div>
@@ -70,12 +68,16 @@ margin-bottom: 4rem;
 
 <div style="text-align: center;">
 
-  <img
-    src="{{ member.image | relative_url }}"
-    width="200"
-    height="200"
-    style="border-radius: 16px; object-fit: cover;"
-  >
+  <a href="{{ member.url | relative_url }}">
+
+    <img
+      src="{{ member.image | relative_url }}"
+      width="200"
+      height="200"
+      style="border-radius: 16px; object-fit: cover;"
+    >
+
+  </a>
 
   <h3 style="margin-top: 1rem; margin-bottom: 0.3rem;">
     {{ member.name }}
@@ -87,12 +89,6 @@ margin-bottom: 4rem;
 
   <p style="margin-top: 0.7rem;">
     {{ member.description }}
-  </p>
-
-  <p>
-    <a href="{{ member.url | relative_url }}">
-      View Profile
-    </a>
   </p>
 
 </div>
