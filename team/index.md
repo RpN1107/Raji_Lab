@@ -17,23 +17,28 @@ Our lab brings together researchers from computational biology, biophysics, mole
 
 ## Principal Investigator
 
+<div style="display: flex; justify-content: center; margin-top: 2rem; margin-bottom: 4rem;">
+
 {% for member in pi_members %}
 
-<div class="member-entry" style="margin-bottom: 3rem;">
+<div style="text-align: center; max-width: 300px;">
 
-  <img 
-    src="{{ member.image | relative_url }}" 
-    width="220"
-    style="border-radius: 12px; object-fit: cover;"
+  <img
+    src="{{ member.image | relative_url }}"
+    width="240"
+    height="240"
+    style="border-radius: 16px; object-fit: cover;"
   >
 
-  <h3>{{ member.name }}</h3>
+  <h3 style="margin-top: 1rem; margin-bottom: 0.3rem;">
+    {{ member.name }}
+  </h3>
 
-  <p>
-    <strong>Role:</strong> Principal Investigator
+  <p style="margin: 0; font-style: italic;">
+    Principal Investigator
   </p>
 
-  <p>
+  <p style="margin-top: 0.7rem;">
     {{ member.description }}
   </p>
 
@@ -46,28 +51,41 @@ Our lab brings together researchers from computational biology, biophysics, mole
 </div>
 
 {% endfor %}
+
+</div>
 
 ---
 
 ## PhD Students
 
+<div style="
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 3rem;
+margin-top: 2rem;
+margin-bottom: 4rem;
+">
+
 {% for member in phd_members %}
 
-<div class="member-entry" style="margin-bottom: 3rem;">
+<div style="text-align: center;">
 
-  <img 
-    src="{{ member.image | relative_url }}" 
+  <img
+    src="{{ member.image | relative_url }}"
     width="200"
-    style="border-radius: 12px; object-fit: cover;"
+    height="200"
+    style="border-radius: 16px; object-fit: cover;"
   >
 
-  <h3>{{ member.name }}</h3>
+  <h3 style="margin-top: 1rem; margin-bottom: 0.3rem;">
+    {{ member.name }}
+  </h3>
 
-  <p>
-    <strong>Duration:</strong> {{ member.duration }}
+  <p style="margin: 0; font-style: italic;">
+    {{ member.duration }}
   </p>
 
-  <p>
+  <p style="margin-top: 0.7rem;">
     {{ member.description }}
   </p>
 
@@ -81,38 +99,41 @@ Our lab brings together researchers from computational biology, biophysics, mole
 
 {% endfor %}
 
+</div>
+
 ---
 
 ## Previous Students
 
-<div style="display: flex; flex-direction: column; gap: 2rem;">
+<div style="
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 2rem;
+margin-top: 2rem;
+">
 
 {% for member in alumni_members %}
 
-<div style="display: flex; align-items: center; gap: 1rem;">
+<div style="text-align: center;">
 
-  <img 
-    src="{{ member.image | relative_url }}" 
-    width="70" 
-    height="70"
+  <img
+    src="{{ member.image | relative_url }}"
+    width="120"
+    height="120"
     style="border-radius: 50%; object-fit: cover;"
   >
 
-  <div>
+  <h3 style="margin-top: 0.8rem; margin-bottom: 0.2rem; font-size: 1.05rem;">
+    {{ member.name }}
+  </h3>
 
-    <h3 style="margin-bottom: 0.3rem;">
-      {{ member.name }}
-    </h3>
+  <p style="margin: 0; font-style: italic;">
+    {{ member.duration }}
+  </p>
 
-    <p style="margin: 0;">
-      <strong>Duration:</strong> {{ member.duration }}
-    </p>
-
-    <p style="margin: 0;">
-      <strong>Current Affiliation:</strong> {{ member.current_affiliation }}
-    </p>
-
-  </div>
+  <p style="margin-top: 0.5rem; font-size: 0.95rem;">
+    {{ member.current_affiliation }}
+  </p>
 
 </div>
 
