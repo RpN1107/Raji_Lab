@@ -2,34 +2,92 @@
 title: Team
 nav:
   order: 3
-  tooltip: About our team
+  tooltip: Meet our team
 ---
 
-# {% include icon.html icon="fa-solid fa-users" %}Team
+# {% include icon.html icon="fa-solid fa-users" %} Team
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Our lab brings together researchers from computational biology, biophysics, molecular simulations, and bioinformatics to study intrinsically disordered proteins and biomolecular dynamics.
 
 {% include section.html %}
 
-{% include list.html data="members" component="portrait" filter="role == 'pi'" %}
-{% include list.html data="members" component="portrait" filter="role != 'pi'" %}
+{% assign pi_members = site.members | where: "role", "pi" %}
+{% assign phd_members = site.members | where: "role", "phd" | sort: "start_year" %}
+{% assign alumni_members = site.members | where: "role", "alumni" | sort: "end_year" | reverse %}
 
-{% include section.html background="images/background.jpg" dark=true %}
+## Principal Investigator
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+{% for member in pi_members %}
+
+<div class="member-entry" style="margin-bottom: 3rem;">
+
+<img src="{{ member.image | relative_url }}" width="220">
+
+### {{ member.name }}
+
+**Role:** Principal Investigator
+
+{{ member.description }}
+
+[View Profile]({{ member.url | relative_url }})
+
+</div>
+
+{% endfor %}
+
+---
+
+## PhD Students
+
+{% for member in phd_members %}
+
+<div class="member-entry" style="margin-bottom: 3rem;">
+
+<img src="{{ member.image | relative_url }}" width="200">
+
+### {{ member.name }}
+
+**Started:** {{ member.start_year }}
+
+{{ member.description }}
+
+[View Profile]({{ member.url | relative_url }})
+
+</div>
+
+{% endfor %}
+
+---
+
+## Previous Students
+
+<div style="display: flex; flex-direction: column; gap: 1.5rem;">
+
+{% for member in alumni_members %}
+
+<div style="display: flex; align-items: center; gap: 1rem;">
+
+<img 
+  src="{{ member.image | relative_url }}" 
+  width="70" 
+  height="70"
+  style="border-radius: 50%; object-fit: cover;"
+>
+
+<div>
+
+### {{ member.name }}
+
+**Years:** {{ member.start_year }} – {{ member.end_year }}
+
+**Current Affiliation:** {{ member.current_affiliation }}
+
+</div>
+
+</div>
+
+{% endfor %}
+
+</div>
 
 {% include section.html %}
-
-{% capture content %}
-
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
-
-{% endcapture %}
-
-{% include grid.html style="square" content=content %}
