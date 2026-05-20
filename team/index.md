@@ -12,8 +12,8 @@ Our lab brings together researchers from computational biology, biophysics, mole
 {% include section.html %}
 
 {% assign pi_members = site.members | where: "role", "pi" %}
-{% assign phd_members = site.members | where: "role", "phd" | sort: "start_year" %}
-{% assign alumni_members = site.members | where: "role", "alumni" | sort: "end_year" | reverse %}
+{% assign phd_members = site.members | where: "role", "phd" | sort: "start_order" %}
+{% assign alumni_members = site.members | where: "role", "alumni" | sort: "start_order" | reverse %}
 
 ## Principal Investigator
 
@@ -47,7 +47,7 @@ Our lab brings together researchers from computational biology, biophysics, mole
 
 ### {{ member.name }}
 
-**Started:** {{ member.start_year }}
+**Duration:** {{ member.duration }}
 
 {{ member.description }}
 
@@ -78,7 +78,7 @@ Our lab brings together researchers from computational biology, biophysics, mole
 
 ### {{ member.name }}
 
-**Years:** {{ member.start_year }} – {{ member.end_year }}
+**Duration:** {{ member.duration }}
 
 **Current Affiliation:** {{ member.current_affiliation }}
 
