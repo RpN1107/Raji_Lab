@@ -2,7 +2,9 @@
 name: Manoj B
 image: images/photo.jpg
 description: PhD student
-start_year: Aug 2024 - _present_
+
+start_order: 202408
+duration: Aug 2024 - _present_
 role: phd
 
 ---
