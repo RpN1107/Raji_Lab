@@ -21,15 +21,27 @@ Our lab brings together researchers from computational biology, biophysics, mole
 
 <div class="member-entry" style="margin-bottom: 3rem;">
 
-<img src="{{ member.image | relative_url }}" width="220">
+  <img 
+    src="{{ member.image | relative_url }}" 
+    width="220"
+    style="border-radius: 12px; object-fit: cover;"
+  >
 
-### {{ member.name }}
+  <h3>{{ member.name }}</h3>
 
-**Role:** Principal Investigator
+  <p>
+    <strong>Role:</strong> Principal Investigator
+  </p>
 
-{{ member.description }}
+  <p>
+    {{ member.description }}
+  </p>
 
-[View Profile]({{ member.url | relative_url }})
+  <p>
+    <a href="{{ member.url | relative_url }}">
+      View Profile
+    </a>
+  </p>
 
 </div>
 
@@ -43,15 +55,27 @@ Our lab brings together researchers from computational biology, biophysics, mole
 
 <div class="member-entry" style="margin-bottom: 3rem;">
 
-<img src="{{ member.image | relative_url }}" width="200">
+  <img 
+    src="{{ member.image | relative_url }}" 
+    width="200"
+    style="border-radius: 12px; object-fit: cover;"
+  >
 
-### {{ member.name }}
+  <h3>{{ member.name }}</h3>
 
-**Duration:** {{ member.duration }}
+  <p>
+    <strong>Duration:</strong> {{ member.duration }}
+  </p>
 
-{{ member.description }}
+  <p>
+    {{ member.description }}
+  </p>
 
-[View Profile]({{ member.url | relative_url }})
+  <p>
+    <a href="{{ member.url | relative_url }}">
+      View Profile
+    </a>
+  </p>
 
 </div>
 
@@ -61,28 +85,34 @@ Our lab brings together researchers from computational biology, biophysics, mole
 
 ## Previous Students
 
-<div style="display: flex; flex-direction: column; gap: 1.5rem;">
+<div style="display: flex; flex-direction: column; gap: 2rem;">
 
 {% for member in alumni_members %}
 
 <div style="display: flex; align-items: center; gap: 1rem;">
 
-<img 
-  src="{{ member.image | relative_url }}" 
-  width="70" 
-  height="70"
-  style="border-radius: 50%; object-fit: cover;"
->
+  <img 
+    src="{{ member.image | relative_url }}" 
+    width="70" 
+    height="70"
+    style="border-radius: 50%; object-fit: cover;"
+  >
 
-<div>
+  <div>
 
-### {{ member.name }}
+    <h3 style="margin-bottom: 0.3rem;">
+      {{ member.name }}
+    </h3>
 
-**Duration:** {{ member.duration }}
+    <p style="margin: 0;">
+      <strong>Duration:</strong> {{ member.duration }}
+    </p>
 
-**Current Affiliation:** {{ member.current_affiliation }}
+    <p style="margin: 0;">
+      <strong>Current Affiliation:</strong> {{ member.current_affiliation }}
+    </p>
 
-</div>
+  </div>
 
 </div>
 
