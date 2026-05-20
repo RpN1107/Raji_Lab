@@ -1,7 +1,7 @@
 ---
 name: Rajeswari Appadurai
 image: images/photo.jpg
-role: principal-investigator
+role: pi
 
 ---
 
