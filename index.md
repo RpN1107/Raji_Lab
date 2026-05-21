@@ -18,7 +18,7 @@ We work on intrinsically disordered proteins, molecular dynamics simulations, co
 
 {% endcapture %}
 
-{% include feature.html image="images/research.jpg" link="research" title="Research Areas" text=text %}
+{% include feature.html image="images/research.jpg" link="projects" title="Research Areas" text=text %}
 
 ---
 
@@ -40,4 +40,4 @@ Our lab brings together students and researchers from interdisciplinary backgrou
 
 Our publications span computational biology, molecular simulations, intrinsically disordered proteins, and computational biophysics.
 
-{% include button.html link="publications" text="View Publications" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
+{% include button.html link="research" text="View Publications" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
