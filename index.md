@@ -14,7 +14,7 @@ We are a computational biophysics lab working on intrinsically disordered protei
 
 We work on intrinsically disordered proteins, molecular dynamics simulations, conformational ensembles, protein folding, and computational biophysics approaches to understand biomolecular behavior.
 
-{% include button.html link="research" text="Explore Research" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
+{% include button.html link="projects" text="Explore Research" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
 
 {% endcapture %}
 
