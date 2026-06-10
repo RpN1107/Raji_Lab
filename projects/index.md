@@ -1,27 +1,12 @@
 ---
-title: Projects
+title: Research
 nav:
-  order: 2
-  tooltip: Software, datasets, and more
+  order: 1
+  tooltip: Ideas we are interested in
 ---
 
-# {% include icon.html icon="fa-solid fa-wrench" %}Projects
+# {% include icon.html icon="fa-solid fa-wrench" %}Research
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Often referred to as “the dark proteome”, intrinsically disordered proteins (IDPs) and intrinsically disordered  regions (IDRs) challenge the long-standing paradigm in structural biology that a well-defined three-dimensional structure is essential for protein function. Instead of adopting stable structures, IDPs/IDRs exist as highly dynamic conformational ensembles that rapidly interconvert among multiple states. Yet they perform crucial functions and are associated with several incurable diseases such as cancer, cardiovascular diseases, neurological disorders etc. Despite their significance, unfortunately, studying them at sufficient resolution is extremely hard using conventional biophysical techniques owing to their fast conformational transitions. My lab focuses on filling this gap using computational biology and artificial intelligence/machine learning (AI/ML) techniques.
 
-{% include tags.html tags="publication, resource, website" %}
 
-{% include search-info.html %}
-
-{% include section.html %}
-
-## Featured
-
-{% include list.html component="card" data="projects" filter="group == 'featured'" %}
-
-{% include section.html %}
-
-## More
-
-{% include list.html component="card" data="projects" filter="!group" style="small" %}
