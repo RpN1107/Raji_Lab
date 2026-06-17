@@ -7,7 +7,7 @@ description: PhD student
 start_order: 202601
 duration: Jan 2026 - <i>present</i>
 links:
-  github: RpN1998
+  github: RpN1107
   website: https://rpn1107.github.io/rithwiknambiar.github.io/
   mail: rithwik20263111@students.iisertirupati.ac.in
 ---
