@@ -9,7 +9,7 @@ duration: Jan 2026 - <i>present</i>
 links:
   github: RpN1107
   website: https://rpn1107.github.io/rithwiknambiar.github.io/
-  mail: rithwik20263111@students.iisertirupati.ac.in
+  email: rithwik20263111@students.iisertirupati.ac.in
 ---
 
 **Rithwik** joined the Computational Biophysics and Integrative Modelling Lab in January, 2026. His research focuses on the improving advanced molecular dynamics sampling techniques for biomolecular simulations. Using the mitochondrial fission protein Drp1 as a model, he aims to understand the mechanism behind mitochondrial dynamics. 
