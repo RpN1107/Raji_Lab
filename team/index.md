@@ -33,13 +33,19 @@ Our lab brings together researchers from computational biology, biophysics, mole
     >
   </a>
 
-  <h3 style="margin-top: 1rem; margin-bottom: 0.3rem; text-align: center;">
+  <h3 style="margin-top: 1rem; margin-bottom: 0.3rem;">
     {{ member.name }}
   </h3>
 
-  <p style="margin: 0; font-style: italic; text-align: center;">
-    Principal Investigator
+  <p style="margin: 0;">
+    {{ member.position }}
   </p>
+
+  {% if member.duration %}
+  <p style="margin-top: 0.2rem; font-style: italic;">
+    {{ member.duration }}
+  </p>
+  {% endif %}
 
   <p style="margin-top: 0.7rem;">
     {{ member.description }}
@@ -76,11 +82,15 @@ margin-bottom: 4rem;
     >
   </a>
 
-  <h3 style="margin-top: 1rem; margin-bottom: 0.3rem; text-align: center;">
+  <h3 style="margin-top: 1rem; margin-bottom: 0.3rem;">
     {{ member.name }}
   </h3>
 
-  <p style="margin: 0; font-style: italic; text-align: center;">
+  <p style="margin: 0;">
+    {{ member.position }}
+  </p>
+
+  <p style="margin-top: 0.2rem; font-style: italic;">
     {{ member.duration }}
   </p>
 
@@ -119,11 +129,15 @@ margin-bottom: 4rem;
     >
   </a>
 
-  <h3 style="margin-top: 1rem; margin-bottom: 0.3rem; text-align: center;">
+  <h3 style="margin-top: 1rem; margin-bottom: 0.3rem;">
     {{ member.name }}
   </h3>
 
-  <p style="margin: 0; font-style: italic; text-align: center;">
+  <p style="margin: 0;">
+    {{ member.position }}
+  </p>
+
+  <p style="margin-top: 0.2rem; font-style: italic;">
     {{ member.duration }}
   </p>
 
@@ -163,23 +177,21 @@ margin-top: 2rem;
     margin-top: 0.8rem;
     margin-bottom: 0.2rem;
     font-size: 1.05rem;
-    text-align: center;
   ">
     {{ member.name }}
   </h3>
 
-  <p style="
-    margin: 0;
-    font-style: italic;
-    text-align: center;
-  ">
+  <p style="margin: 0;">
+    {{ member.position }}
+  </p>
+
+  <p style="margin-top: 0.2rem; font-style: italic;">
     {{ member.duration }}
   </p>
 
   <p style="
     margin-top: 0.5rem;
     font-size: 0.95rem;
-    text-align: center;
   ">
     {{ member.current_affiliation }}
   </p>
