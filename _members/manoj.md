@@ -2,12 +2,12 @@
 name: Manoj B
 image: images/photo.jpg
 description: PhD student
-
+position: PhD Student
 start_order: 202408
 duration: Aug 2024 - <i>present</i>
 role: phd
 links:
-    mail: manoj_20243131@students.iisertirupati.ac.in
+    email: manoj_20243131@students.iisertirupati.ac.in
 
 ---
 
