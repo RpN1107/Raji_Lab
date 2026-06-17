@@ -2,9 +2,13 @@
 name: Lavanya G
 image: images/photo.jpg
 description: PhD student
+position: PhD student
 start_order: 202501
 duration: Jan 2025 - <i>present</i>
 role: phd
+links:
+    email: gantyada20253109@students.iisertirupati.ac.in
+    website: https://www.researchgate.net/profile/Lavanya-Gantyada
 
 ---
 
