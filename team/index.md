@@ -13,6 +13,7 @@ Our lab brings together researchers from computational biology, biophysics, mole
 
 {% assign pi_members = site.members | where: "role", "pi" %}
 {% assign phd_members = site.members | where: "role", "phd" | sort: "start_order" %}
+{% assign masters_members = site.members | where: "role", "masters" | sort: "start_order" %}
 {% assign alumni_members = site.members | where: "role", "alumni" | sort: "start_order" | reverse %}
 
 ## Principal Investigator
@@ -24,21 +25,19 @@ Our lab brings together researchers from computational biology, biophysics, mole
 <div style="text-align: center; max-width: 320px;">
 
   <a href="{{ member.url | relative_url }}">
-
     <img
       src="{{ member.image | relative_url }}"
       width="240"
       height="240"
       style="border-radius: 16px; object-fit: cover;"
     >
-
   </a>
 
-  <h3 style="margin-top: 1rem; margin-bottom: 0.3rem;">
+  <h3 style="margin-top: 1rem; margin-bottom: 0.3rem; text-align: center;">
     {{ member.name }}
   </h3>
 
-  <p style="margin: 0; font-style: italic;">
+  <p style="margin: 0; font-style: italic; text-align: center;">
     Principal Investigator
   </p>
 
@@ -58,7 +57,7 @@ Our lab brings together researchers from computational biology, biophysics, mole
 
 <div style="
 display: grid;
-grid-template-columns: repeat(3, 1fr);
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 gap: 3rem;
 margin-top: 2rem;
 margin-bottom: 4rem;
@@ -69,21 +68,62 @@ margin-bottom: 4rem;
 <div style="text-align: center;">
 
   <a href="{{ member.url | relative_url }}">
-
     <img
       src="{{ member.image | relative_url }}"
       width="200"
       height="200"
       style="border-radius: 16px; object-fit: cover;"
     >
-
   </a>
 
-  <h3 style="margin-top: 1rem; margin-bottom: 0.3rem;">
+  <h3 style="margin-top: 1rem; margin-bottom: 0.3rem; text-align: center;">
     {{ member.name }}
   </h3>
 
-  <p style="margin: 0; font-style: italic;">
+  <p style="margin: 0; font-style: italic; text-align: center;">
+    {{ member.duration }}
+  </p>
+
+  <p style="margin-top: 0.7rem;">
+    {{ member.description }}
+  </p>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+---
+
+## Master's Students
+
+<div style="
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 3rem;
+margin-top: 2rem;
+margin-bottom: 4rem;
+">
+
+{% for member in masters_members %}
+
+<div style="text-align: center;">
+
+  <a href="{{ member.url | relative_url }}">
+    <img
+      src="{{ member.image | relative_url }}"
+      width="200"
+      height="200"
+      style="border-radius: 16px; object-fit: cover;"
+    >
+  </a>
+
+  <h3 style="margin-top: 1rem; margin-bottom: 0.3rem; text-align: center;">
+    {{ member.name }}
+  </h3>
+
+  <p style="margin: 0; font-style: italic; text-align: center;">
     {{ member.duration }}
   </p>
 
@@ -103,7 +143,7 @@ margin-bottom: 4rem;
 
 <div style="
 display: grid;
-grid-template-columns: repeat(4, 1fr);
+grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 gap: 2rem;
 margin-top: 2rem;
 ">
@@ -119,15 +159,28 @@ margin-top: 2rem;
     style="border-radius: 50%; object-fit: cover;"
   >
 
-  <h3 style="margin-top: 0.8rem; margin-bottom: 0.2rem; font-size: 1.05rem;">
+  <h3 style="
+    margin-top: 0.8rem;
+    margin-bottom: 0.2rem;
+    font-size: 1.05rem;
+    text-align: center;
+  ">
     {{ member.name }}
   </h3>
 
-  <p style="margin: 0; font-style: italic;">
+  <p style="
+    margin: 0;
+    font-style: italic;
+    text-align: center;
+  ">
     {{ member.duration }}
   </p>
 
-  <p style="margin-top: 0.5rem; font-size: 0.95rem;">
+  <p style="
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    text-align: center;
+  ">
     {{ member.current_affiliation }}
   </p>
 
