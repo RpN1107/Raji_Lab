@@ -12,7 +12,7 @@ links:
   email: rithwik20263111@students.iisertirupati.ac.in
 ---
 
-**Rithwik** joined the Computational Biophysics and Integrative Modelling Lab in January, 2026. His research focuses on the improving advanced molecular dynamics sampling techniques for biomolecular simulations. Using the mitochondrial fission protein Drp1 as a model, he aims to understand the mechanism behind mitochondrial dynamics. 
+**Rithwik** joined the Computational Biophysics and Integrative Modelling Lab in January, 2026. His research focuses on improving advanced molecular dynamics sampling techniques for biomolecular simulations. Using the mitochondrial fission protein Drp1 as a model, he aims to understand the mechanism behind mitochondrial dynamics. 
 
 Before joining the lab, he completed his BS-MS in Biological Sciences from IISER Thiruvananthapuram. He worked as a researcher at the University of Bergen, Norway before pursuing a Professional Masters in Biological Data Science from IISER Tirupati. His research interests lie at the intersection of molecular biophysics, structural biology, and computational method development.
 
