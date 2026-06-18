@@ -1,3 +1,4 @@
+```markdown
 ---
 title: Team
 nav:
@@ -22,7 +23,13 @@ Our lab brings together researchers from computational biology, biophysics, mole
 
 {% for member in pi_members %}
 
-<div style="text-align: center; max-width: 320px;">
+<div style="
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+max-width: 320px;
+">
 
   <a href="{{ member.url | relative_url }}">
     <img
@@ -33,21 +40,21 @@ Our lab brings together researchers from computational biology, biophysics, mole
     >
   </a>
 
-  <h3 style="margin-top: 1rem; margin-bottom: 0.3rem;">
+  <h3 style="margin-top: 1rem; margin-bottom: 0.3rem; text-align: center;">
     {{ member.name }}
   </h3>
 
-  <p style="margin: 0;">
+  <p style="margin: 0; text-align: center;">
     {{ member.position }}
   </p>
 
   {% if member.duration %}
-  <p style="margin-top: 0.2rem; font-style: italic;">
+  <p style="margin-top: 0.2rem; font-style: italic; text-align: center;">
     {{ member.duration }}
   </p>
   {% endif %}
 
-  <p style="margin-top: 0.7rem;">
+  <p style="margin-top: 0.7rem; text-align: center;">
     {{ member.description }}
   </p>
 
@@ -71,7 +78,12 @@ margin-bottom: 4rem;
 
 {% for member in phd_members %}
 
-<div style="text-align: center;">
+<div style="
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+">
 
   <a href="{{ member.url | relative_url }}">
     <img
@@ -82,19 +94,19 @@ margin-bottom: 4rem;
     >
   </a>
 
-  <h3 style="margin-top: 1rem; margin-bottom: 0.3rem;">
+  <h3 style="margin-top: 1rem; margin-bottom: 0.3rem; text-align: center;">
     {{ member.name }}
   </h3>
 
-  <p style="margin: 0;">
+  <p style="margin: 0; text-align: center;">
     {{ member.position }}
   </p>
 
-  <p style="margin-top: 0.2rem; font-style: italic;">
+  <p style="margin-top: 0.2rem; font-style: italic; text-align: center;">
     {{ member.duration }}
   </p>
 
-  <p style="margin-top: 0.7rem;">
+  <p style="margin-top: 0.7rem; text-align: center;">
     {{ member.description }}
   </p>
 
@@ -118,7 +130,12 @@ margin-bottom: 4rem;
 
 {% for member in masters_members %}
 
-<div style="text-align: center;">
+<div style="
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+">
 
   <a href="{{ member.url | relative_url }}">
     <img
@@ -129,19 +146,19 @@ margin-bottom: 4rem;
     >
   </a>
 
-  <h3 style="margin-top: 1rem; margin-bottom: 0.3rem;">
+  <h3 style="margin-top: 1rem; margin-bottom: 0.3rem; text-align: center;">
     {{ member.name }}
   </h3>
 
-  <p style="margin: 0;">
+  <p style="margin: 0; text-align: center;">
     {{ member.position }}
   </p>
 
-  <p style="margin-top: 0.2rem; font-style: italic;">
+  <p style="margin-top: 0.2rem; font-style: italic; text-align: center;">
     {{ member.duration }}
   </p>
 
-  <p style="margin-top: 0.7rem;">
+  <p style="margin-top: 0.7rem; text-align: center;">
     {{ member.description }}
   </p>
 
@@ -164,7 +181,12 @@ margin-top: 2rem;
 
 {% for member in alumni_members %}
 
-<div style="text-align: center;">
+<div style="
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+">
 
   <img
     src="{{ member.image | relative_url }}"
@@ -177,21 +199,23 @@ margin-top: 2rem;
     margin-top: 0.8rem;
     margin-bottom: 0.2rem;
     font-size: 1.05rem;
+    text-align: center;
   ">
     {{ member.name }}
   </h3>
 
-  <p style="margin: 0;">
+  <p style="margin: 0; text-align: center;">
     {{ member.position }}
   </p>
 
-  <p style="margin-top: 0.2rem; font-style: italic;">
+  <p style="margin-top: 0.2rem; font-style: italic; text-align: center;">
     {{ member.duration }}
   </p>
 
   <p style="
     margin-top: 0.5rem;
     font-size: 0.95rem;
+    text-align: center;
   ">
     {{ member.current_affiliation }}
   </p>
@@ -203,3 +227,4 @@ margin-top: 2rem;
 </div>
 
 {% include section.html %}
+```
