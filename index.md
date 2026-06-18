@@ -2,7 +2,7 @@
 layout: default
 ---
  
-# Raji Computational Biology Lab
+# Computational Biophysics Lab
 
 We are a computational biophysics lab working on intrinsically disordered proteins using Molecular Dynamics.
 
