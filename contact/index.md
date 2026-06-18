@@ -5,35 +5,40 @@ nav:
   tooltip: Email, address, and location
 ---
 
-# {% include icon.html icon="fa-regular fa-envelope" %}Contact
+# {% include icon.html icon="fa-regular fa-envelope" %} Contact
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+We are always interested in hearing from prospective students, collaborators, and researchers interested in computational biophysics, molecular simulations, structural biology, and intrinsically disordered proteins.
+
+For inquiries regarding research opportunities, collaborations, or joining the lab, please contact us using the information below.
 
 {%
   include button.html
   type="email"
   text="rajeswari@labs.iisertirupati.ac.in"
-  link="rajeswari@labs.iisertirupati.ac.in"
+  link="mailto:rajeswari@labs.iisertirupati.ac.in"
 %}
-{%
-  include button.html
-  type="phone"
-  text="(555) 867-5309"
-  link="+1-555-867-5309"
-%}
+
 {%
   include button.html
   type="address"
-  tooltip="Our location on Google Maps for easy navigation"
+  tooltip="View our location on Google Maps"
   link="https://maps.app.goo.gl/wX2HCu5TEv14qqH7A"
 %}
 
 {% include section.html %}
 
-{% endcapture %}
+## Laboratory Address
 
-{% include cols.html col1=col1 col2=col2 %}
+Computational Biophysics and Integrative Modelling Lab  
+Department of Biology  
+Indian Institute of Science Education and Research Tirupati (IISER Tirupati)  
+Tirupati, Andhra Pradesh 517507  
+India
 
-{% include cols.html col1=col1 col2=col2 col3=col3 %}
+## Prospective Students
+
+We welcome inquiries from motivated students interested in computational biology, molecular biophysics, molecular simulations, structural biology, machine learning, and related areas. Interested candidates are encouraged to contact the PI with a CV and a brief statement of research interests.
+
+## Collaborations
+
+We are interested in collaborations involving biomolecular simulations, enhanced sampling methods, intrinsically disordered proteins and integrative computational approaches.
