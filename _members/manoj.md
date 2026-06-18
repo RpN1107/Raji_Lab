@@ -11,7 +11,7 @@ links:
 
 ---
 
-Manoj B joined the lab as a PhD student in August 2024. His research focuses on intrinsically disordered regions (IDRs) in membrane proteins, primarily using molecular dynamics and network analysis. He is interested in studying the role of IDRs in ion channel activity and is currently focusing on TRPV channels and the N- and C-terminal disordered regions. He earned his BS-MS degree from the Indian Institute of Science Education and Research (IISER) Bhopal, graduating in 2022.
+**Manoj B** joined the lab as a PhD student in August 2024. His research focuses on intrinsically disordered regions (IDRs) in membrane proteins, primarily using molecular dynamics and network analysis. He is interested in studying the role of IDRs in ion channel activity and is currently focusing on TRPV channels and the N- and C-terminal disordered regions. He earned his BS-MS degree from the Indian Institute of Science Education and Research (IISER) Bhopal, graduating in 2022.
 
 Outside of the lab, he enjoys dancing, playing volleyball, and listening to music.
 
